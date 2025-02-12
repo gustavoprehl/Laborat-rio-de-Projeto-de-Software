@@ -104,10 +104,11 @@ Ambiente de desenvolvimento integrado (IDE) para Java (ex: IntelliJ, Eclipse).
 
 🔗 Contribuição
 
-Desenvolvedores
-Gustavo Azi Prehl Gama
+Desenvolvedores:
 
-Guilherme Henrique da Silveira
+1. Gustavo Azi Prehl Gama
+
+2. Guilherme Henrique da Silveira
 
 Repositório
 Link para o repositório no GitHub
