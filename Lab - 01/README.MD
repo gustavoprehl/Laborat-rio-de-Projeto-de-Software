@@ -1,4 +1,5 @@
 Sistema de Matrículas - Universidade
+
 🎯 Visão Geral
 Este projeto visa informatizar o Sistema de Matrículas de uma universidade, proporcionando um gerenciamento eficiente e automatizado de cursos, disciplinas, alunos e professores. O sistema permitirá a matrícula em disciplinas obrigatórias e optativas, o cancelamento de matrículas, a consulta de informações acadêmicas e a integração com o sistema de cobrança da instituição.
 
@@ -60,6 +61,7 @@ Diagrama de Classes:
 
 📜 Histórias de Usuário
 1. Aluno
+
 Como aluno, quero fazer login no sistema para acessar minhas informações acadêmicas.
 
 Como aluno, quero me matricular em até 4 disciplinas obrigatórias e 2 optativas para planejar meu semestre.
@@ -69,11 +71,13 @@ Como aluno, quero cancelar disciplinas caso precise ajustar minha carga horária
 Como aluno, quero consultar minhas disciplinas matriculadas para acompanhar meu cronograma.
 
 2. Professor
+
 Como professor, quero fazer login no sistema para acessar informações das minhas disciplinas.
 
 Como professor, quero consultar a lista de alunos matriculados em minhas disciplinas para organizar minhas aulas.
 
 3. Secretaria
+
 Como membro da secretaria, quero fazer login no sistema para gerenciar informações acadêmicas.
 
 Como membro da secretaria, quero criar e gerenciar cursos e disciplinas para manter o currículo atualizado.
@@ -99,6 +103,7 @@ Ferramentas de modelagem UML (ex: Lucidchart, Figma).
 Ambiente de desenvolvimento integrado (IDE) para Java (ex: IntelliJ, Eclipse).
 
 🔗 Contribuição
+
 Desenvolvedores
 Gustavo Azi Prehl Gama
 
