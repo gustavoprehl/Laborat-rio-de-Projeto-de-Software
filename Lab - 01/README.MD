@@ -1,6 +1,7 @@
 <u>**🎓 Sistema de Matrículas - Universidade**</u>
 
   <u>**🎯 Visão Geral**</u>
+
     Este projeto visa informatizar o Sistema de Matrículas de uma universidade, proporcionando um gerenciamento eficiente e automatizado de cursos, disciplinas, alunos e professores. O sistema permitirá a matrícula em disciplinas obrigatórias e optativas, o cancelamento de     matrículas, a consulta de informações acadêmicas e a integração com o sistema de cobrança da instituição.
 
 
@@ -87,6 +88,7 @@
       - Ambiente de desenvolvimento integrado (IDE) para Java (ex: IntelliJ, Eclipse).
 
   <u>**🔗 Contribuição**</u>
+
     **Desenvolvedores**
       
       - Gustavo Azi Prehl Gama
