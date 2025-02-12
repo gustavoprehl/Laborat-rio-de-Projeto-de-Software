@@ -1,9 +1,11 @@
-🎓 Sistema de Matrículas - Universidade
+<u>**🎓 Sistema de Matrículas - Universidade**</u>
 
-  🎯 Visão Geral
+  <u>**🎯 Visão Geral**</u>
     Este projeto visa informatizar o Sistema de Matrículas de uma universidade, proporcionando um gerenciamento eficiente e automatizado de cursos, disciplinas, alunos e professores. O sistema permitirá a matrícula em disciplinas obrigatórias e optativas, o cancelamento de     matrículas, a consulta de informações acadêmicas e a integração com o sistema de cobrança da instituição.
 
-  🚀 Funcionalidades Principais
+
+  <u>**🚀 Funcionalidades Principais**</u>
+
     **1. Cadastro e Autenticação**
       - Cadastro e login de usuários (alunos, professores e secretaria) com validação de senha;
       - Controle de acesso baseado no perfil do usuário (aluno, professor, secretaria).
@@ -25,7 +27,7 @@
     **5. Integração com Sistema de Cobrança**
       - Notificação automática ao sistema de cobrança após a confirmação de matrícula.
 
-  👥 Atores do Sistema
+  <u>**👥 Atores do Sistema**</u>
 
     **1. Aluno**
       - Realiza matrícula em disciplinas obrigatórias e optativas;
@@ -44,12 +46,12 @@
     **4. Sistema de Cobrança**
       Recebe notificações automáticas de matrículas para processar cobranças.
 
-  📊 Modelos UML
+  <u>**📊 Modelos UML**</u>
 
     - **Diagrama de Casos de Uso:** [Ver Diagrama](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/blob/main/Lab%20-%2001/Diagrama%20de%20caso%20de%20uso.png) 
     - **Diagrama de Casos de Uso:** [Ver Diagrama]
 
-  📜 Histórias de Usuário
+  <u>**📜 Histórias de Usuário**</u>
 
     **1. Aluno**
       Como aluno, quero fazer login no sistema para acessar minhas informações acadêmicas;
@@ -84,7 +86,7 @@
       - Ferramentas de modelagem UML (ex: Lucidchart, Figma).
       - Ambiente de desenvolvimento integrado (IDE) para Java (ex: IntelliJ, Eclipse).
 
-  🔗 Contribuição
+  <u>**🔗 Contribuição**</u>
     **Desenvolvedores**
       
       - Gustavo Azi Prehl Gama
