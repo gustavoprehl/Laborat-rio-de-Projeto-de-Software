@@ -2,7 +2,9 @@
 
   <u>**🎯 Visão Geral**</u>
 
-    Este projeto visa informatizar o Sistema de Matrículas de uma universidade, proporcionando um gerenciamento eficiente e automatizado de cursos, disciplinas, alunos e professores. O sistema permitirá a matrícula em disciplinas obrigatórias e optativas, o cancelamento de     matrículas, a consulta de informações acadêmicas e a integração com o sistema de cobrança da instituição.
+    Este projeto visa informatizar o Sistema de Matrículas de uma universidade, proporcionando um gerenciamento eficiente  
+    e automatizado de cursos, disciplinas, alunos e professores. O sistema permitirá a matrícula em disciplinas obrigatórias e optativas,  
+    o cancelamento de matrículas, a consulta de informações acadêmicas e a integração com o sistema de cobrança da instituição.
 
 
   <u>**🚀 Funcionalidades Principais**</u>
@@ -49,7 +51,7 @@
 
   <u>**📊 Modelos UML**</u>
 
-    - **Diagrama de Casos de Uso:** [Ver Diagrama](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/blob/main/Lab%20-%2001/Diagrama%20de%20caso%20de%20uso.png) 
+    - **Diagrama de Casos de Uso:** [Ver Diagrama] (https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/blob/main/Lab%20-%2001/Diagrama%20de%20caso%20de%20uso.png) 
     - **Diagrama de Classes:** [Ver Diagrama]
 
   <u>**📜 Histórias de Usuário**</u>
