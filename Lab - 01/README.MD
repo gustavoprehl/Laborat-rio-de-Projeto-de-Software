@@ -7,11 +7,11 @@
 
   <u>**🚀 Funcionalidades Principais**</u>
 
-    ### **1. Cadastro e Autenticação
+    # **1. Cadastro e Autenticação
       - Cadastro e login de usuários (alunos, professores e secretaria) com validação de senha;
       - Controle de acesso baseado no perfil do usuário (aluno, professor, secretaria).
 
-    ### **2. Matrícula em Disciplinas 
+    ## **2. Matrícula em Disciplinas 
       - Matrícula em até 4 disciplinas obrigatórias e 2 disciplinas optativas por semestre;
       - Verificação automática de disponibilidade de vagas (máximo de 60 alunos por disciplina);
       - Cancelamento de matrículas durante o período permitido.
@@ -20,12 +20,12 @@
       - Ativação ou cancelamento de disciplinas com base no número mínimo de matrículas (3 alunos);
       - Criação e gerenciamento de cursos, disciplinas e currículos pela secretaria.
 
-    ### **4. Consultas e Relatórios
+    #### **4. Consultas e Relatórios
       - Consulta de disciplinas matriculadas pelos alunos;
       - Visualização da lista de alunos matriculados por disciplina para professores;
       - Relatórios de matrículas ativas e canceladas para a secretaria.
 
-    ### **5. Integração com Sistema de Cobrança
+    ##### **5. Integração com Sistema de Cobrança
       - Notificação automática ao sistema de cobrança após a confirmação de matrícula.
 
   <u>**👥 Atores do Sistema**</u>
