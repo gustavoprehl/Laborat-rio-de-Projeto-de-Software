@@ -8,7 +8,7 @@
     instituição.  
 
 
-  <u>**🚀 Funcionalidades Principais**</u>
+  ##**🚀 Funcionalidades Principais**
 
     **1. Cadastro e Autenticação** 
       - Cadastro e login de usuários (alunos, professores e secretaria) com validação de senha;
