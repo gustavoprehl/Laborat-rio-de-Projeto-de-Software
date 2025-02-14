@@ -4,8 +4,8 @@
 
     Este projeto visa informatizar o Sistema de Matrículas de uma universidade, proporcionando um gerenciamento eficiente  
     e automatizado de cursos, disciplinas, alunos e professores. O sistema permitirá a matrícula em  disciplinas obrigatórias  
-    e optativas, cancelamento de matrículas, consulta de informações  
-    acadêmicas e integração com o sistema de cobrança da instituição.
+    e optativas, cancelamento de matrículas, consulta de informações  acadêmicas e integração com o sistema de cobrança da  
+    instituição.  
 
 
   <u>**🚀 Funcionalidades Principais**</u>
