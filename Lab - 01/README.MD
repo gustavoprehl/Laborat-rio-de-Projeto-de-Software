@@ -3,8 +3,9 @@
   <u>**🎯 Visão Geral**</u>
 
     Este projeto visa informatizar o Sistema de Matrículas de uma universidade, proporcionando um gerenciamento eficiente  
-    e automatizado de cursos, disciplinas, alunos e professores. O sistema permitirá a matrícula em disciplinas obrigatórias e optativas,  
-    o cancelamento de matrículas, a consulta de informações acadêmicas e a integração com o sistema de cobrança da instituição.
+    e automatizado de cursos, disciplinas, alunos e professores. O sistema permitirá a matrícula em  
+    disciplinas obrigatórias e optativas, cancelamento de matrículas, consulta de informações  
+    acadêmicas e integração com o sistema de cobrança da instituição.
 
 
   <u>**🚀 Funcionalidades Principais**</u>
@@ -74,13 +75,17 @@
     ### **4. Sistema de cobrança
       Como sistema de cobrança, quero ser notificado automaticamente após a matrícula de um aluno para processar a cobrança das disciplinas.
 
+  <u>**🖥️ Diagrama de Classes**</u>
+
+      - 
+
   <u>**🗂️ Requisitos Técnicos**</u>
 
     ### **Linguagem de Programação
       - Java.
     
     ### **Modelagem
-      - Diagramas UML (Casos de Uso, Classes).
+      - Diagrama UML (Casos de Uso).
 
     ### **Versionamento e Documentação
       - Repositório no GitHub com versionamento e documentação atualizada.
