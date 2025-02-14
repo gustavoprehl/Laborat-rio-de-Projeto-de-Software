@@ -9,7 +9,7 @@
 
   <u>**🚀 Funcionalidades Principais**</u>
 
-    # 1. Cadastro e Autenticação #
+    # 1. Cadastro e Autenticação 
       - Cadastro e login de usuários (alunos, professores e secretaria) com validação de senha;
       - Controle de acesso baseado no perfil do usuário (aluno, professor, secretaria).
 
