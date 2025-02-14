@@ -1,6 +1,6 @@
-<u>**🎓 Sistema de Matrículas - Universidade**</u>
+**🎓 Sistema de Matrículas - Universidade**
 
-  <u>**🎯 Visão Geral**</u>
+  ##**🎯 Visão Geral**
 
     Este projeto visa informatizar o Sistema de Matrículas de uma universidade, proporcionando um gerenciamento eficiente  
     e automatizado de cursos, disciplinas, alunos e professores. O sistema permitirá a matrícula em  disciplinas obrigatórias  
@@ -31,7 +31,7 @@
     **5. Integração com Sistema de Cobrança**
       - Notificação automática ao sistema de cobrança após a confirmação de matrícula.
 
-  <u>**👥 Atores do Sistema**</u>
+  ##**👥 Atores do Sistema**
 
     **1. Aluno**
       - Realiza matrícula em disciplinas obrigatórias e optativas;
@@ -50,12 +50,12 @@
     **4. Sistema de cobrança**
       Recebe notificações automáticas de matrículas para processar cobranças.
 
-  <u>**📊 Modelos UML**</u>
+  ##**📊 Modelos UML**
 
     - **Diagrama de Casos de Uso:** [Ver Diagrama] (https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/blob/main/Lab%20-%2001/Diagrama%20de%20caso%20de%20uso.png) 
     - **Diagrama de Classes:** [Ver Diagrama]
 
-  <u>**📜 Histórias de Usuário**</u>
+  ##**📜 Histórias de Usuário**
 
     **1. Aluno**
       Como aluno, quero fazer login no sistema para acessar minhas informações acadêmicas;
@@ -79,7 +79,7 @@
 
       - 
 
-  <u>**🗂️ Requisitos Técnicos**</u>
+  ##**🗂️ Requisitos Técnicos**
 
     **Linguagem de Programação**
       - Java.
@@ -94,7 +94,7 @@
       - Ferramentas de modelagem UML (ex: Lucidchart, Figma).
       - Ambiente de desenvolvimento integrado (IDE) para Java (ex: IntelliJ, Eclipse).
 
-  <u>**🔗 Contribuição**</u>
+  ##**🔗 Contribuição**
 
     **Desenvolvedores**
       
