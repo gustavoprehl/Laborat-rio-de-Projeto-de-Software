@@ -79,7 +79,7 @@
 
       - 
 ##**🗂️ Estrutura do projeto**
-  src/
+ "" src/
   ├── main/
   │   ├── java/com/universidade/matriculas/
   │   │    ├── SistemaMatriculasApplication.java
@@ -144,7 +144,7 @@
                │    │    │      └── auth.service.ts
                │    │    └── app.module.ts
                │    └── index.html
-               └── angular.json
+               └── angular.json""
 
 
   ##**Requisitos Técnicos**
