@@ -78,8 +78,76 @@
   <u>**🖥️ Diagrama de Classes**</u>
 
       - 
+##**🗂️ Estrutura do projeto**
+  src/
+  ├── main/
+  │   ├── java/com/universidade/matriculas/
+  │   │    ├── SistemaMatriculasApplication.java
+  │   │    ├── config/
+  │   │    │      └── SecurityConfig.java
+  │   │    ├── controller/
+  │   │    │      ├── AlunoController.java
+  │   │    │      ├── ProfessorController.java
+  │   │    │      ├── SecretariaController.java
+  │   │    │      ├── CursoController.java
+  │   │    │      └── DisciplinaController.java
+  │   │    ├── model/
+  │   │    │      ├── Aluno.java
+  │   │    │      ├── Professor.java
+  │   │    │      ├── Secretaria.java
+  │   │    │      ├── Curso.java
+  │   │    │      ├── Disciplina.java
+  │   │    │      ├── Matricula.java
+  │   │    │      └── Usuario.java
+  │   │    ├── repository/
+  │   │    │      ├── AlunoRepository.java
+  │   │    │      ├── ProfessorRepository.java
+  │   │    │      ├── SecretariaRepository.java
+  │   │    │      ├── CursoRepository.java
+  │   │    │      ├── DisciplinaRepository.java
+  │   │    │      └── MatriculaRepository.java
+  │   │    └── service/
+  │   │           ├── AlunoService.java
+  │   │           ├── ProfessorService.java
+  │   │           ├── SecretariaService.java
+  │   │           ├── CursoService.java
+  │   │           ├── DisciplinaService.java
+  │   │           └── MatriculaService.java
+  │   └── resources/
+  │          ├── application.properties
+  │          └── data.sql
+  └── webapp/
+        └── angular/
+               ├── src/
+               │    ├── app/
+               │    │    ├── components/
+               │    │    │      ├── aluno/
+               │    │    │      │      ├── aluno-lista/
+               │    │    │      │      │      └── aluno-lista.component.ts
+               │    │    │      │      ├── aluno-cadastro/
+               │    │    │      │      │      └── aluno-cadastro.component.ts
+               │    │    │      │      └── aluno-detalhe/
+               │    │    │      │             └── aluno-detalhe.component.ts
+               │    │    │      ├── disciplina/
+               │    │    │      │      ├── disciplina-lista/
+               │    │    │      │      │      └── disciplina-lista.component.ts
+               │    │    │      │      └── disciplina-cadastro/
+               │    │    │      │             └── disciplina-cadastro.component.ts
+               │    │    │      └── autenticacao/
+               │    │    │             ├── login/
+               │    │    │             │      └── login.component.ts
+               │    │    │             └── cadastro/
+               │    │    │                    └── cadastro.component.ts
+               │    │    ├── services/
+               │    │    │      ├── aluno.service.ts
+               │    │    │      ├── disciplina.service.ts
+               │    │    │      └── auth.service.ts
+               │    │    └── app.module.ts
+               │    └── index.html
+               └── angular.json
 
-  ##**🗂️ Requisitos Técnicos**
+
+  ##**Requisitos Técnicos**
 
     **Linguagem de Programação**
       - Java.
