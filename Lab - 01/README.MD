@@ -1,6 +1,6 @@
  **🎓 Sistema de Matrículas - Universidade**
 
-  ##**🎯 Visão Geral**
+  **🎯 Visão Geral**
 
     Este projeto visa informatizar o Sistema de Matrículas de uma universidade, proporcionando um gerenciamento eficiente  
     e automatizado de cursos, disciplinas, alunos e professores. O sistema permitirá a matrícula em  disciplinas obrigatórias  
@@ -8,7 +8,7 @@
     instituição.  
 
 
-  ##**🚀 Funcionalidades Principais**
+  **🚀 Funcionalidades Principais**
 
     **1. Cadastro e Autenticação** 
       - Cadastro e login de usuários (alunos, professores e secretaria) com validação de senha;
@@ -31,7 +31,7 @@
     **5. Integração com Sistema de Cobrança**
       - Notificação automática ao sistema de cobrança após a confirmação de matrícula.
 
-  ##**👥 Atores do Sistema**
+  **👥 Atores do Sistema**
 
     **1. Aluno**
       - Realiza matrícula em disciplinas obrigatórias e optativas;
@@ -50,12 +50,12 @@
     **4. Sistema de cobrança**
       Recebe notificações automáticas de matrículas para processar cobranças.
 
-  ##**📊 Modelos UML**
+  **📊 Modelos UML**
 
     - **Diagrama de Casos de Uso:** [Ver Diagrama] (https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/blob/main/Lab%20-%2001/Diagrama%20de%20caso%20de%20uso.png) 
     - **Diagrama de Classes:** [Ver Diagrama]
 
-  ##**📜 Histórias de Usuário**
+  **📜 Histórias de Usuário**
 
     **1. Aluno**
       Como aluno, quero fazer login no sistema para acessar minhas informações acadêmicas;
@@ -144,10 +144,12 @@
                      │    └── index.html
                      └── angular.json
 
-  ##**Requisitos Técnicos**
+  **Requisitos Técnicos**
 
     **Linguagem de Programação**
-      - Java.
+      - Java Spring Boot (back-end);
+      - Angular (front-end);
+      - MySql.
     
     **Modelagem**
       - Diagrama UML (Casos de Uso).
@@ -159,7 +161,7 @@
       - Ferramentas de modelagem UML (ex: Lucidchart, Figma).
       - Ambiente de desenvolvimento integrado (IDE) para Java (ex: IntelliJ, Eclipse).
 
-  ##**🔗 Contribuição**
+  **🔗 Contribuição**
 
     **Desenvolvedores**
       
