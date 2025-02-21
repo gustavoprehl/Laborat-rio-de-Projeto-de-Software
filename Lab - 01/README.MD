@@ -1,4 +1,4 @@
-"" **🎓 Sistema de Matrículas - Universidade**
+ **🎓 Sistema de Matrículas - Universidade**
 
   ##**🎯 Visão Geral**
 
@@ -78,8 +78,8 @@
   <u>**🖥️ Diagrama de Classes**</u>
 
       - 
-##**🗂️ Estrutura do projeto**
- ' src/
+**🗂️ Estrutura do projeto**
+  src/
   ├── main/
   │   ├── java/com/universidade/matriculas/
   │   │    ├── SistemaMatriculasApplication.java
@@ -144,7 +144,7 @@
                │    │    │      └── auth.service.ts
                │    │    └── app.module.ts
                │    └── index.html
-               └── angular.json'
+               └── angular.json
 
 
   ##**Requisitos Técnicos**
@@ -170,4 +170,4 @@
       - Guilherme Henrique da Silveira
     
     **Repositório**
-      - Link para o repositório ""
+      - Link para o repositório
