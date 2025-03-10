@@ -1,0 +1,19 @@
+<p-table [value]="disciplinas" dataKey="id">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Disciplina</th>
+        <th>Ações</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-disciplina>
+      <tr>
+        <td>{{ disciplina.nome }}</td>
+        <td>
+          <button pButton type="button" label="Editar" icon="pi pi-pencil" class="p-button-warning" (click)="editarDisciplina(disciplina)"></button>
+          <button pButton type="button" label="Atualizar" icon="pi pi-check" class="p-button-success" (click)="atualizarDisciplina(disciplina)"></button>
+          <button pButton type="button" label="Deletar" icon="pi pi-trash" class="p-button-danger" (click)="deletarDisciplina(disciplina)"></button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+  

@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "baseUrl": "./", 
+    "paths": {
+      "environments/*": ["src/environments/*"]
+    }
+  },
+  "files": [
+    "src/main.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}
