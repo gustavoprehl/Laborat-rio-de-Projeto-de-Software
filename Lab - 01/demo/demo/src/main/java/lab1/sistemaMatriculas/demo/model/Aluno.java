@@ -41,6 +41,9 @@ public class Aluno {
     @Column(name = "senha", unique = true, nullable = false)
     private String senha;
 
+    @Column(name = "ROLE_ALUNO", unique = true, nullable = true)
+    private ProfileEnum ROLE_ALUNO;
+
     @JsonProperty(access = Access.WRITE_ONLY)
     @ManyToMany
     @JoinTable(

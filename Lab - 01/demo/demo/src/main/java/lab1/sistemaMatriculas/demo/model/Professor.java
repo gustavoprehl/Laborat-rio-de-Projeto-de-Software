@@ -42,6 +42,9 @@ public class Professor {
     @Column(name = "senha", unique = true, nullable = false)
     private String senha;
 
+    @Column(name = "ROLE_PROFESSOR", unique = true, nullable = true)
+    private ProfileEnum ROLE_PROFESSOR;
+
     @JsonProperty(access = Access.WRITE_ONLY)
     @OneToMany()
     @JoinColumn(name = "id_disciplina", unique = true)

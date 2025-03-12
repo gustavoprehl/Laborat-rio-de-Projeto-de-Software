@@ -44,6 +44,9 @@ public class Secretaria {
     @Column(name = "senha", unique = true, nullable = false)
     private String senha;
 
+    @Column(name = "ROLE_SECRETARIA", unique = true, nullable = true)
+    private ProfileEnum ROLE_SECRETARIA;
+
     @OneToMany()
     @JoinColumn(name = "id_curso", unique = true)
     @JsonProperty(access = Access.WRITE_ONLY)

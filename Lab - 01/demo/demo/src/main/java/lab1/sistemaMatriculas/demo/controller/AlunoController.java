@@ -21,7 +21,7 @@ public class AlunoController {
         return ResponseEntity.ok(alunos);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("login/{id}")
     public ResponseEntity<Aluno> buscarPorId(@PathVariable Long id) {
         Aluno aluno = alunoService.findById(id);
         return ResponseEntity.ok(aluno);
