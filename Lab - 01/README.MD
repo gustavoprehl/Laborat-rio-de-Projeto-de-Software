@@ -75,46 +75,54 @@
     **4. Sistema de cobrança**
       Como sistema de cobrança, quero ser notificado automaticamente após a matrícula de um aluno para processar a cobrança das disciplinas.
 
-  <u>**🖥️ Diagrama de Classes**</u>
+  <u>**🖥️ Estrutura de classes**</u>
 
         src/
-        ├── main/
-        │   ├── java/com/universidade/matriculas/
-        │   │    ├── SistemaMatriculasApplication.java
-        │   │    ├── config/
-        │   │    │      └── SecurityConfig.java
-        │   │    ├── controller/
-        │   │    │      ├── AlunoController.java
-        │   │    │      ├── ProfessorController.java
-        │   │    │      ├── SecretariaController.java
-        │   │    │      ├── CursoController.java
-        │   │    │      └── DisciplinaController.java
-        │   │    ├── model/
-        │   │    │      ├── Aluno.java
-        │   │    │      ├── Professor.java
-        │   │    │      ├── Secretaria.java
-        │   │    │      ├── Curso.java
-        │   │    │      ├── Disciplina.java
-        │   │    │      ├── Matricula.java
-        │   │    │      └── Usuario.java
-        │   │    ├── repository/
-        │   │    │      ├── AlunoRepository.java
-        │   │    │      ├── ProfessorRepository.java
-        │   │    │      ├── SecretariaRepository.java
-        │   │    │      ├── CursoRepository.java
-        │   │    │      ├── DisciplinaRepository.java
-        │   │    │      └── MatriculaRepository.java
-        │   │    └── service/
-        │   │           ├── AlunoService.java
-        │   │           ├── ProfessorService.java
-        │   │           ├── SecretariaService.java
-        │   │           ├── CursoService.java
-        │   │           ├── DisciplinaService.java
-        │   │           └── MatriculaService.java
-        │   └── resources/
-        │          ├── application.properties
-        │          └── data.sql
-        └── webapp/
+          ├── main/
+          │   ├── java/com/universidade/matriculas/
+          │   │    ├── SistemaMatriculasApplication.java
+          │   │    ├── config/
+          │   │    │      └── SecurityConfig.java
+          │   │    ├── controller/
+          │   │    │      ├── AlunoController.java
+          │   │    │      ├── ProfessorController.java
+          │   │    │      ├── SecretariaController.java
+          │   │    │      ├── CursoController.java
+          │   │    │      ├── DisciplinaController.java
+          │   │    │      └── PermissoesController.java
+          │   │    ├── model/
+          │   │    │      ├── Aluno.java
+          │   │    │      ├── Professor.java
+          │   │    │      ├── Secretaria.java
+          │   │    │      ├── Curso.java
+          │   │    │      ├── Disciplina.java
+          │   │    │      ├── Matricula.java
+          │   │    │      ├── Usuario.java
+          │   │    │     
+          │   │    ├── repository/
+          │   │    │      ├── AlunoRepository.java
+          │   │    │      ├── ProfessorRepository.java
+          │   │    │      ├── SecretariaRepository.java
+          │   │    │      ├── CursoRepository.java
+          │   │    │      ├── DisciplinaRepository.java
+          │   │    │      ├── MatriculaRepository.java
+          │   │    │      └── PermissoesRepository.java 
+          │   │    ├── service/
+          │   │    │      ├── AlunoService.java
+          │   │    │      ├── ProfessorService.java
+          │   │    │      ├── SecretariaService.java
+          │   │    │      ├── CursoService.java
+          │   │    │      ├── DisciplinaService.java
+          │   │    │      ├── MatriculaService.java
+          │   │    │      └── PermissoesService.java
+          │   │    ├── enum/
+          │   │    │      └── ProfileEnum.java   
+          │   │    ├── dto/
+          │   │    │      └── LoginDTO.java     
+          │   │    └── resources/
+          │   │          ├── application.properties
+          │   │          └── data.sql
+          └── webapp/
               └── angular/
                      ├── src/
                      │    ├── app/
@@ -143,6 +151,53 @@
                      │    │    └── app.module.ts
                      │    └── index.html
                      └── angular.json
+
+  <u>**🖥️ Arquitetura do sistema**</u>
+
+     Arquitetura do Sistema de Matrículas Universitárias
+Este projeto segue a arquitetura MVC (Model-View-Controller) dentro de uma arquitetura em camadas, combinando Spring Boot (back-end) e Angular (front-end) para fornecer uma API REST robusta e uma interface interativa para os usuários.
+
+    🔹 Camadas do Back-End (Spring Boot)
+       1️⃣ Model (Modelos de Dados) 
+          🏛️ Representa as entidades do sistema (Aluno, Professor, Curso, Disciplina, Matricula, Usuario).
+              Usa JPA/Hibernate para persistência no banco de dados.
+              Localizado em model/.
+
+       2️⃣ Repository (Repositórios) 
+          🗄️Responsável pela comunicação com o banco de dados.
+             Usa Spring Data JPA para CRUD automático.
+             Exemplo: AlunoRepository extends JpaRepository<Aluno, Long>.
+             Localizado em repository/.
+
+       3️⃣ Service (Serviços) 
+          ⚙️Contém a lógica de negócio do sistema.
+             Exemplo: MatriculaService gerencia as regras para matrícula dos alunos.
+             Localizado em service/.
+
+       4️⃣ Controller (Controladores REST) 
+          🎮Exponibiliza os endpoints REST para o frontend e sistemas externos.
+            Exemplo: AlunoController define operações como GET /alunos, POST /alunos, etc.
+            Localizado em controller/.
+
+       5️⃣ Config (Configuração de Segurança) 
+          🔒Define a configuração de Spring Security e JWT para autenticação e autorização.
+            Exemplo: SecurityConfig.java gerencia permissões de acesso.
+            Localizado em config/.
+
+       6️⃣ Enum (Enums para perfis de usuário) 
+         🔄Define os tipos de perfis disponíveis, como aluno, professor e administrador.
+            Exemplo: ProfileEnum.java.
+            Localizado em enum/.
+
+       7️⃣ DTO (Data Transfer Objects)
+          📦Contém classes usadas para transferência de dados entre front-end e back-end.
+             Exemplo: LoginDTO.java para autenticação de usuários.
+             Localizado em dto/.
+
+       8️⃣ Resources (Configuração da Aplicação)
+          ⚙️Contém arquivos de configuração, como application.properties para definir conexão com o banco de dados e segurança.
+             Localizado em resources/.
+
 
   **Requisitos Técnicos**
 
