@@ -35,7 +35,6 @@ public class Disciplina {
     @Column(name = "id_disciplina", unique = true)
     private Long id;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @Column(name = "nome", unique = true, nullable = false)
     private String nome;
 

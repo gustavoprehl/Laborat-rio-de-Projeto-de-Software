@@ -1,21 +1,17 @@
 package lab1.sistemaMatriculas.demo.service;
 
 import org.springframework.http.ResponseEntity;
-
-import jakarta.persistence.criteria.CriteriaBuilder.Case;
+import org.springframework.stereotype.Service;
 import lab1.sistemaMatriculas.demo.DTO.LoginDTO;
 
+@Service
 public class PermissaoService {
 
-    public static ResponseEntity<Object> login(LoginDTO loginDto) {
-
-        loginDto.getSenha();
-        loginDto.getROLE();
-        loginDto.getLogin();
+    public ResponseEntity<Object> login(LoginDTO loginDto) {
 
         int roleValue;
 
-        switch (loginDto.getROLE()) {
+        switch (loginDto.getRole()) {
             case ADMIN:
                 roleValue = 1;
                 break;

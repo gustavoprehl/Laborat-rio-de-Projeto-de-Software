@@ -14,6 +14,6 @@ public class LoginDTO {
 
     private String login;
     private String senha;
-    private ProfileEnum ROLE;
+    private ProfileEnum role;
 
 }

@@ -28,7 +28,6 @@ public class Curso {
     @Column(name = "id_curso", unique = true)
     private Long id;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @Column(name = "nome", unique = true, nullable = false)
     private String nome;
 

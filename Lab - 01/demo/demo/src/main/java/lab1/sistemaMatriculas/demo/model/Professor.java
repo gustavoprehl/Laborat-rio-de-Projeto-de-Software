@@ -30,7 +30,6 @@ public class Professor {
     @Column(name = "id_professor", unique = true)
     private Long id;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @Column(name = "nome", unique = true, nullable = false)
     private String nome;
 
@@ -38,14 +37,13 @@ public class Professor {
     @Column(name = "email", unique = true, nullable = false)
     private String email;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @Column(name = "senha", unique = true, nullable = false)
     private String senha;
 
+    @JsonProperty(access = Access.WRITE_ONLY)
     @Column(name = "ROLE_PROFESSOR", unique = true, nullable = true)
     private ProfileEnum ROLE_PROFESSOR;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @OneToMany()
     @JoinColumn(name = "id_disciplina", unique = true)
     private List<Disciplina> disciplinas;
