@@ -112,9 +112,9 @@
           │   │    │      ├── DisciplinaService.java
           │   │    │      └── MatriculaService.java
           │   │    ├── enum/
-          │   │    │      └── ProfileEnum.java   <--- Novo arquivo
+          │   │    │      └── ProfileEnum.java   
           │   │    ├── dto/
-          │   │    │      └── LoginDTO.java      <--- Novo arquivo
+          │   │    │      └── LoginDTO.java     
           │   │    └── resources/
           │   │          ├── application.properties
           │   │          └── data.sql
