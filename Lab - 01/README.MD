@@ -77,7 +77,7 @@
 
   <u>**🖥️ Diagrama de Classes**</u>
 
-          src/
+        src/
           ├── main/
           │   ├── java/com/universidade/matriculas/
           │   │    ├── SistemaMatriculasApplication.java
@@ -88,7 +88,8 @@
           │   │    │      ├── ProfessorController.java
           │   │    │      ├── SecretariaController.java
           │   │    │      ├── CursoController.java
-          │   │    │      └── DisciplinaController.java
+          │   │    │      ├── DisciplinaController.java
+          │   │    │      └── PermissoesController.java
           │   │    ├── model/
           │   │    │      ├── Aluno.java
           │   │    │      ├── Professor.java
@@ -96,21 +97,24 @@
           │   │    │      ├── Curso.java
           │   │    │      ├── Disciplina.java
           │   │    │      ├── Matricula.java
-          │   │    │      └── Usuario.java
+          │   │    │      ├── Usuario.java
+          │   │    │     
           │   │    ├── repository/
           │   │    │      ├── AlunoRepository.java
           │   │    │      ├── ProfessorRepository.java
           │   │    │      ├── SecretariaRepository.java
           │   │    │      ├── CursoRepository.java
           │   │    │      ├── DisciplinaRepository.java
-          │   │    │      └── MatriculaRepository.java
+          │   │    │      ├── MatriculaRepository.java
+          │   │    │      └── PermissoesRepository.java 
           │   │    ├── service/
           │   │    │      ├── AlunoService.java
           │   │    │      ├── ProfessorService.java
           │   │    │      ├── SecretariaService.java
           │   │    │      ├── CursoService.java
           │   │    │      ├── DisciplinaService.java
-          │   │    │      └── MatriculaService.java
+          │   │    │      ├── MatriculaService.java
+          │   │    │      └── PermissoesService.java
           │   │    ├── enum/
           │   │    │      └── ProfileEnum.java   
           │   │    ├── dto/
