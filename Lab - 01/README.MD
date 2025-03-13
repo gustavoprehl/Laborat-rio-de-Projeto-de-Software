@@ -154,8 +154,7 @@
 
   <u>**🖥️ Arquitetura do sistema**</u>
 
-     Arquitetura do Sistema de Matrículas Universitárias
-Este projeto segue a arquitetura MVC (Model-View-Controller) dentro de uma arquitetura em camadas, combinando Spring Boot (back-end) e Angular (front-end) para fornecer uma API REST robusta e uma interface interativa para os usuários.
+       Este projeto segue a arquitetura MVC (Model-View-Controller) dentro de uma arquitetura em camadas, combinando Spring Boot (back-end) e Angular (front-end) para fornecer uma API REST robusta e uma interface interativa para os usuários.
 
     🔹 Camadas do Back-End (Spring Boot)
        1️⃣ Model (Modelos de Dados) 
