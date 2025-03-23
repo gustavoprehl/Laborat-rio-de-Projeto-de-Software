@@ -24,7 +24,7 @@ public class Clientes {
     private String nome;
 
     @Column(name = "identCliente", unique = true)
-    private String identificação;
+    private String identificacao;
 
     @Column(name = "tipoCliente")
     private TiposClienteEnum tipo;
