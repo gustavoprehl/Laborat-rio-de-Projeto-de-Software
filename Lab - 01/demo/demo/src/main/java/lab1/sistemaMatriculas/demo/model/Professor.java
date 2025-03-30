@@ -33,14 +33,12 @@ public class Professor {
     @Column(name = "nome", unique = true, nullable = false)
     private String nome;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @Column(name = "email", unique = true, nullable = false)
     private String email;
 
     @Column(name = "senha", unique = true, nullable = false)
     private String senha;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @Column(name = "ROLE_PROFESSOR", unique = true, nullable = true)
     private ProfileEnum ROLE_PROFESSOR;
 

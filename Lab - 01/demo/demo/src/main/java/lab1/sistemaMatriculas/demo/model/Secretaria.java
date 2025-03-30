@@ -32,7 +32,6 @@ public class Secretaria {
     @Column(name = "id_secretaria", unique = true)
     private Long id;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @Column(name = "nome", unique = true, nullable = false)
     private String nome;
 
@@ -40,7 +39,6 @@ public class Secretaria {
     @Column(name = "email", unique = true, nullable = false)
     private String email;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @Column(name = "senha", unique = true, nullable = false)
     private String senha;
 

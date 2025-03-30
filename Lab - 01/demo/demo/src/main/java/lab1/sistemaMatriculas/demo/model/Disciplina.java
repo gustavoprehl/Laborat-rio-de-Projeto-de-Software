@@ -38,17 +38,14 @@ public class Disciplina {
     @Column(name = "nome", unique = true, nullable = false)
     private String nome;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @ManyToOne
     @JoinColumn(name = "id_curso")
     private Curso curso;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @ManyToOne
     @JoinColumn(name = "id_professor")
     private Professor professor;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @ManyToMany(mappedBy = "disciplinas")
     private List<Aluno> alunos;
 

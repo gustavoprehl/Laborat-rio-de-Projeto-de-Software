@@ -25,12 +25,10 @@ public class Matricula {
     @Column(name = "id_matricula", unique = true)
     private Long id;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @ManyToOne
     @JoinColumn(name = "aluno_id")
     private Aluno aluno;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @ManyToOne
     @JoinColumn(name = "id_disciplina")
     private Disciplina disciplina;

@@ -29,22 +29,18 @@ public class Aluno {
     @Column(name = "id_alunos", unique = true)
     private Long id;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
-    @Column(name = "nome", unique = true, nullable = false)
+    @Column(name = "nome", nullable = false)
     private String nome;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
-    @Column(name = "email", unique = true, nullable = false)
+    @Column(name = "email", nullable = false)
     private String email;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
-    @Column(name = "senha", unique = true, nullable = false)
+    @Column(name = "senha", nullable = false)
     private String senha;
 
-    @Column(name = "ROLE_ALUNO", unique = true, nullable = true)
+    @Column(name = "ROLE_ALUNO", nullable = true)
     private ProfileEnum ROLE_ALUNO;
 
-    @JsonProperty(access = Access.WRITE_ONLY)
     @ManyToMany
     @JoinTable(
         name = "aluno_disciplinas",
