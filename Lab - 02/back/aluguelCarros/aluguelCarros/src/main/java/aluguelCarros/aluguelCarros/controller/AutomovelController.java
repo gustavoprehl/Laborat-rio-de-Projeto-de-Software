@@ -17,7 +17,7 @@ public class AutomovelController {
     @Autowired
     private AutomovelService automovelService;
 
-    @GetMapping
+    @GetMapping("/listarAutomoveis")
     public List<Automovel> listarTodos() {
         return automovelService.listarTodos();
     }
@@ -29,7 +29,7 @@ public class AutomovelController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    @PostMapping
+    @PostMapping("/salvar")
     public Automovel salvar(@RequestBody Automovel automovel) {
         return automovelService.salvar(automovel);
     }

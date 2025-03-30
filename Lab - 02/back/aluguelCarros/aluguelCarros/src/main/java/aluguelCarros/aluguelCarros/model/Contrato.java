@@ -12,17 +12,16 @@ import java.util.List;
 @Data
 @Entity(name = "contrato")
 public class Contrato {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idContrato", unique = true)
     private Long id;
     
     @OneToOne
     @JoinColumn(name = "pedido_id")
-    @Column(name = "pedido_id", unique = true)
     private Pedido pedido;
     
     @OneToOne(mappedBy = "contrato", cascade = CascadeType.ALL)
-    @Column(name = "credito_id", unique = true)
     private Credito credito;
+
 }

@@ -12,9 +12,9 @@ import java.util.List;
 @Data
 @Entity(name = "credito")
 public class Credito {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idCredito", unique = true)
     private Long id;
 
     @Column(name = "valorCredito")
@@ -23,8 +23,8 @@ public class Credito {
     @Column(name = "status")
     private String status;
     
+    
     @OneToOne
     @JoinColumn(name = "contrato_id")
-    @Column(name = "contrato_id", unique = true)
     private Contrato contrato;
 }

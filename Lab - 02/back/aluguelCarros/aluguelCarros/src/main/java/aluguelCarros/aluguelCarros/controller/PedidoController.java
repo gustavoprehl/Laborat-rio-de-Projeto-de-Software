@@ -16,7 +16,7 @@ public class PedidoController {
     @Autowired
     private PedidoService pedidoService;
 
-    @GetMapping
+    @GetMapping("/listarPedidos")
     public List<Pedido> listarTodos() {
         return pedidoService.listarTodos();
     }
@@ -27,7 +27,7 @@ public class PedidoController {
         return pedido.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @PostMapping
+    @PostMapping("/salvar")
     public Pedido salvar(@RequestBody Pedido pedido) {
         return pedidoService.salvar(pedido);
     }

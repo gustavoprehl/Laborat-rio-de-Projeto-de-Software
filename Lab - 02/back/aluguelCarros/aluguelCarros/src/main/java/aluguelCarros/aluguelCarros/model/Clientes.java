@@ -4,6 +4,8 @@ import aluguelCarros.aluguelCarros.enums.TiposClienteEnum;
 import jakarta.persistence.Column;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -23,9 +25,9 @@ public class Clientes {
     @Column(name = "nomeCliente")
     private String nome;
 
-    @Column(name = "identCliente", unique = true)
+    @Column(unique = true)
     private String identificacao;
 
-    @Column(name = "tipoCliente")
+    @Enumerated(EnumType.STRING)
     private TiposClienteEnum tipo;
 }
