@@ -1,5 +1,9 @@
 package lab1.sistemaMatriculas.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +22,7 @@ public class Matricula {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_matricula", unique = true)
     private Long id;
 
     @ManyToOne
@@ -25,6 +30,6 @@ public class Matricula {
     private Aluno aluno;
 
     @ManyToOne
-    @JoinColumn(name = "disciplina_id")
+    @JoinColumn(name = "id_disciplina")
     private Disciplina disciplina;
 }

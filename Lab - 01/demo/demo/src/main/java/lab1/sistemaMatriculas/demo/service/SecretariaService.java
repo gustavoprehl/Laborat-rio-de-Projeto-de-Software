@@ -6,7 +6,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import lab1.sistemaMatriculas.demo.model.Disciplina;
 import lab1.sistemaMatriculas.demo.model.Secretaria;
 import lab1.sistemaMatriculas.demo.repository.SecretariaRepository;
 
@@ -20,29 +19,31 @@ public class SecretariaService {
         this.secretariaRepository = secretariaRepository;
     }
 
-    public List<Secretaria> listarTodas() {
+    public List<Secretaria> findAll() {
         return secretariaRepository.findAll();
     }
 
-    public Optional<Secretaria> buscarPorId(Long id) {
+    public Optional<Secretaria> findById(Long id) {
         return secretariaRepository.findById(id);
     }
 
-    public Secretaria salvar(Secretaria secretaria) {
+    public Secretaria create(Secretaria secretaria) {
+        secretaria.setId(null);
         return secretariaRepository.save(secretaria);
     }
 
-    public void remover(Long id) {
+    public Secretaria update(Long id, Secretaria secretaria) {
+        Optional<Secretaria> existingSecretaria = secretariaRepository.findById(id);
+        if (existingSecretaria.isPresent()) {
+            Secretaria updatedSecretaria = existingSecretaria.get();
+            updatedSecretaria.setNome(secretaria.getNome());
+            return secretariaRepository.save(updatedSecretaria);
+        } else {
+            throw new RuntimeException("Secretaria não encontrada! Id: " + id);
+        }
+    }
+
+    public void delete(Long id) {
         secretariaRepository.deleteById(id);
     }
-    
-    // public void validarDisciplinas(List<Disciplina> disciplinas) {
-    //     for (Disciplina disciplina : disciplinas) {
-    //         if (disciplina.getAlunosMatriculados().size() < 3) {
-    //             disciplina.setAtiva(false);
-    //         } else {
-    //             disciplina.setAtiva(true);
-    //         }
-    //     }
-    // }
 }

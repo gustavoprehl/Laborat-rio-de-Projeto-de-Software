@@ -26,6 +26,9 @@ public class MatriculaService {
     @Autowired
     private DisciplinaRepository disciplinaRepository;
 
+    @Autowired
+    private NotificacaoService notificacaoService;
+
     public Matricula findById(Long id) {
         return matriculaRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Matrícula não encontrada! Id: " + id));
@@ -50,8 +53,12 @@ public class MatriculaService {
         Matricula matricula = new Matricula();
         matricula.setAluno(aluno);
         matricula.setDisciplina(disciplina);
+        matriculaRepository.save(matricula);
 
-        return matriculaRepository.save(matricula);
+        String mensagem = "Aluno " + aluno.getNome() + " foi inscrito na disciplina " + disciplina.getNome();
+        notificacaoService.enviarNotificacao(mensagem);
+
+        return matricula;
     }
 
     @Transactional

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar/Modificar Pedido - Aluguel de Carros</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/novo-pedido.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Criar/Modificar Pedido</h1>
+        <a href="pedidos.html" class="btn-voltar">Voltar</a>
+    </header>
+    <main class="pedido-container">
+        <form id="pedidoForm" class="pedido-form">
+            <h2>Informações do Pedido</h2>
+            <label for="cliente">Cliente:</label>
+            <select id="cliente" name="cliente" required>
+                <option value="">Selecione um cliente</option>
+                <option value="1">João Silva</option>
+                <option value="2">Maria Oliveira</option>
+                <!-- Clientes dinâmicos podem ser carregados aqui -->
+            </select>
+
+            <label for="automovel">Automóvel:</label>
+            <select id="automovel" name="automovel" required>
+                <option value="">Selecione um automóvel</option>
+                <option value="1">Toyota Corolla - 2022</option>
+                <option value="2">Honda Civic - 2021</option>
+                <!-- Automóveis dinâmicos podem ser carregados aqui -->
+            </select>
+
+            <label for="dataInicio">Data de Início:</label>
+            <input type="date" id="dataInicio" name="dataInicio" required>
+
+            <label for="dataFim">Data de Fim:</label>
+            <input type="date" id="dataFim" name="dataFim" required>
+
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" name="valor" placeholder="Digite o valor do pedido" required>
+
+            <button type="submit" class="btn-salvar">Salvar Pedido</button>
+        </form>
+    </main>
+
+    <script src="../js/novo-pedido.js"></script>
+</body>
+</html>
