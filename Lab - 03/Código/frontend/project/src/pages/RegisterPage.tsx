@@ -113,7 +113,7 @@ const RegisterPage: React.FC = () => {
         <div className="text-center">
           <h1 className="text-3xl font-bold text-[#4B3F72]" style={{ fontFamily: 'Poppins, sans-serif' }}>Meritus</h1>
           <p className="mt-2 text-[#2E2E2E]" style={{ fontFamily: 'Open Sans, sans-serif' }}>
-            Sistema de Reconhecimento de Mérito Acadêmico
+            Academic Merit Recognition System
           </p>
         </div>
 

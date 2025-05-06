@@ -7,14 +7,14 @@ const LoginPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  
+
   const { login } = useAuth();
   const { showToast } = useToast();
   const navigate = useNavigate();
   const location = useLocation();
-  
+
   const from = location.state?.from?.pathname || '/';
-  
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -24,10 +24,10 @@ const LoginPage: React.FC = () => {
     }
 
     setIsLoading(true);
-    
+
     try {
       const success = await login(email, password);
-      
+
       if (success) {
         showToast('Login successful!', 'success');
         navigate(from);
@@ -47,12 +47,12 @@ const LoginPage: React.FC = () => {
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-royalIndigo font-title">Meritus</h1>
-          <p className="mt-2 text-slateGraphite text-sm">Sistema de Reconhecimento de Mérito Acadêmico</p>
+          <p className="mt-2 text-slateGraphite text-sm">Academic Merit Recognition System</p>
         </div>
 
         <div className="bg-white shadow-xl rounded-2xl p-8 mt-6">
-          <h2 className="text-2xl font-semibold text-slateGraphite font-title mb-6">Acessar Conta</h2>
-          
+          <h2 className="text-2xl font-semibold text-slateGraphite font-title mb-6">Sign In</h2>
+
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-slateGraphite mb-1">
@@ -67,13 +67,13 @@ const LoginPage: React.FC = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-4 py-2 border border-slateGraphite rounded-md placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-mintProgress"
-                placeholder="Digite seu email"
+                placeholder="Enter your email"
               />
             </div>
-            
+
             <div>
               <label htmlFor="password" className="block text-sm font-medium text-slateGraphite mb-1">
-                Senha
+                Password
               </label>
               <input
                 id="password"
@@ -84,25 +84,25 @@ const LoginPage: React.FC = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full px-4 py-2 border border-slateGraphite rounded-md placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-mintProgress"
-                placeholder="Digite sua senha"
+                placeholder="Enter your password"
               />
             </div>
-            
+
             <div>
               <button
                 type="submit"
                 disabled={isLoading}
                 className={`w-full flex justify-center py-3 px-4 rounded-xl text-sm font-semibold text-white bg-mintProgress hover:bg-goldenAmber focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-royalIndigo transition ${isLoading ? 'opacity-70 cursor-not-allowed' : ''}`}
               >
-                {isLoading ? 'Entrando...' : 'Entrar'}
+                {isLoading ? 'Logging in...' : 'Log In'}
               </button>
             </div>
           </form>
 
           <div className="mt-6 text-center text-sm text-slateGraphite">
-            Não tem uma conta?{' '}
+            Don't have an account?{' '}
             <Link to="/register" className="font-medium text-goldenAmber hover:text-royalIndigo">
-              Cadastre-se agora
+              Sign up now
             </Link>
           </div>
         </div>
