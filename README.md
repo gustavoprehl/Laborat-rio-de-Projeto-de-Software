@@ -11,9 +11,9 @@ Este repositório contém as soluções desenvolvidas para os laboratórios prop
 
 ## Índice
 
-- [Código](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/tree/Lab03/Lab%20-%2003/C%C3%B3digo/frontend/project)
-- [Diagramas](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/tree/Lab03/Lab%20-%2003/Diagramas)
-- [Histórias de Usuário](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/blob/Lab03/Lab%20-%2003/historiasusuario.md)
+- [💻Código](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/tree/Lab03/Lab%20-%2003/C%C3%B3digo/frontend/project)
+- [📊Diagramas](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/tree/Lab03/Lab%20-%2003/Diagramas)
+- [✍️Histórias de Usuário](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/blob/Lab03/Lab%20-%2003/historiasusuario.md)
 
 ## Histórias de Usuário
 
