@@ -10,39 +10,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laboratório de Projeto de Software</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    p {
-      line-height: 1.6;
-    }
-    a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 20px;
-      background-color: #2980b9;
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    .button:hover {
-      background-color: #3498db;
-    }
-  </style>
+
 </head>
 <body>
   <h1>Laboratório de Projeto de Software</h1>
