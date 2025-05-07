@@ -9,9 +9,9 @@ Este repositório contém as soluções desenvolvidas para os laboratórios prop
 
 ## Índice
 
-- [Lab - 01](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/tree/Lab03/Lab%20-%2001)
-- [Lab - 02](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/tree/Lab03/Lab%20-%2002)
-- [Lab - 03](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/tree/Lab03/Lab%20-%2003)
+- [Código](Lab-03/Código/frontend/project)
+- [Diagramas](Lab-03/Diagramas)
+- [Histórias de Usuário](Lab-03/historiasusuario.md)
 
 ## Acesso ao Repositório
 
