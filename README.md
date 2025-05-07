@@ -1,17 +1,19 @@
+# Laboratório de Projeto de Software
+
+Este repositório contém as soluções desenvolvidas para os laboratórios propostos na disciplina de Projeto de Software.
+
+## Grupo:
+
 ### Guilherme Rodrigues
 ### Guilherme Silveira
 ### Gustavo Prehl
 ### Lucas Valente
 
-# Laboratório de Projeto de Software
-
-Este repositório contém as soluções desenvolvidas para os laboratórios propostos na disciplina de Projeto de Software.
-
 ## Índice
 
 - [Código](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/tree/Lab03/Lab%20-%2003/C%C3%B3digo/frontend/project)
 - [Diagramas](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/tree/Lab03/Lab%20-%2003/Diagramas)
-- [Histórias de Usuário](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/blob/Lab03/Lab%20-%2003/historiasusuario.md])
+- [Histórias de Usuário](https://github.com/gustavoprehl/Laborat-rio-de-Projeto-de-Software/blob/Lab03/Lab%20-%2003/historiasusuario.md)
 
 ## Histórias de Usuário
 
