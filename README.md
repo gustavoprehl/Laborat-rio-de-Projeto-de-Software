@@ -1,7 +1,7 @@
-##Guilherme Rodrigues
-##Guilherme Silveira
-##Gustavo Prehl
-##Lucas Valente
+# Guilherme Rodrigues
+# Guilherme Silveira
+# Gustavo Prehl
+# Lucas Valente
 
 # Laboratório de Projeto de Software
 
