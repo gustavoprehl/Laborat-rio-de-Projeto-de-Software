@@ -1,6 +1,7 @@
 package moedaAcademica.api.controller;
 
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,7 +9,7 @@ import moedaAcademica.application.usecases.CrudAluno;
 import moedaAcademica.domain.model.Aluno;
 
 import java.util.List;
-import java.util.UUID;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -22,8 +23,15 @@ public class AlunoController {
         this.crudAluno = crudAluno;
     }
     @PostMapping("/adicionar")
-    public String adicionarAluno(UUID id, String nome, String cpf, String endereco, String curso, int instituicaoId, int usuarioId) {
-        boolean sucesso = crudAluno.adicionarAluno(id, nome, cpf, endereco, curso, instituicaoId, usuarioId);
+    public String adicionarAluno(@RequestBody Aluno aluno) {
+        boolean sucesso = crudAluno.adicionarAluno(
+            aluno.getName(),
+            aluno.getCpf(),
+            aluno.getEndereco(),
+            aluno.getCurso(),
+            aluno.getInstituicaoId(),
+            aluno.getUsuarioId()
+        );
         if (sucesso) {
             return "Aluno adicionado com sucesso!";
         } else {
@@ -31,8 +39,16 @@ public class AlunoController {
         }
     }
     @PostMapping("/atualizar")
-    public String atualizarAluno(UUID id, String nome, String cpf, String endereco, String curso, int instituicaoId, int usuarioId) {
-        boolean sucesso = crudAluno.atualizarAluno(id, nome, cpf, endereco, curso, instituicaoId, usuarioId);
+    public String atualizarAluno(@RequestBody Aluno aluno) {
+        boolean sucesso = crudAluno.atualizarAluno(
+            aluno.getId(),
+            aluno.getName(),
+            aluno.getCpf(),
+            aluno.getEndereco(),
+            aluno.getCurso(),
+            aluno.getInstituicaoId(),
+            aluno.getUsuarioId()
+        );
         if (sucesso) {
             return "Aluno atualizado com sucesso!";
         } else {
@@ -40,8 +56,8 @@ public class AlunoController {
         }
     }
     @PostMapping("/deletar")
-    public String deletarAluno(UUID id) {
-        boolean sucesso = crudAluno.deletarAluno(id);
+    public String deletarAluno(@RequestBody Aluno aluno) {
+        boolean sucesso = crudAluno.deletarAluno(aluno.getId());
         if (sucesso) {
             return "Aluno deletado com sucesso!";
         } else {
@@ -49,10 +65,10 @@ public class AlunoController {
         }
     }
     @PostMapping("/buscar")
-    public String buscarAluno(UUID id) {
-        Aluno aluno = crudAluno.buscarAluno(id);
-        if (aluno != null) {
-            return "Aluno encontrado: " + aluno.toString();
+    public String buscarAluno(@RequestBody Aluno aluno) {
+        Aluno encontrado = crudAluno.buscarAluno(aluno.getId());
+        if (encontrado != null) {
+            return "Aluno encontrado: " + encontrado.toString();
         } else {
             return "Aluno não encontrado.";
         }
