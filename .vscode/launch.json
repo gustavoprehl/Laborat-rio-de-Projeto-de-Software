@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MoedaAcademicaApplication<moedaAcademica>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "moedaAcademica.MoedaAcademicaApplication",
+            "projectName": "moedaAcademica",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
