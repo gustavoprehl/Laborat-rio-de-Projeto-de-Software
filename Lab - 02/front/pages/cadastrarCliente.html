@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Clientes</title>
+    <link rel="stylesheet" href="../css/cadastrarCliente.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Adicionar Cliente</h2>
+            <label>Nome:</label>
+            <input type="text" id="nome"><br>
+            <label>Identificador:</label>
+            <input type="text" id="identificador"><br>
+            <label>Tipo:</label>
+            <select id="tipo">
+                <option value="PESSOA">Pessoa</option>
+                <option value="EMPRESA">Empresa</option>
+                <option value="BANCO">Banco</option>
+            </select><br>
+            <button onclick="adicionarCliente()">Salvar</button>
+        </div>
+        <div>
+            <h2>Lista de Clientes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Identificador</th>
+                        <th>Tipo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="clientesTable"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/cadastrarCliente.js"></script>
+</body>
+</html>
