@@ -21,6 +21,9 @@ public class Transacao {
     public int moedaId;
     public String tipo;
     public int quantidade;
+    public int remetenteId;
+    public int destinatarioId;
+    public int usuarioId;
 
     public Transacao(Date data, int moedaId, String tipo, int quantidade) {
         this.data = data;

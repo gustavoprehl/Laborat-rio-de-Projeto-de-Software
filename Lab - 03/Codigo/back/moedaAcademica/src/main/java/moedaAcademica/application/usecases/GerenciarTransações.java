@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
+import java.util.List;
 
 
 @Service
@@ -48,6 +49,15 @@ public class GerenciarTransações {
         Transacao transacao = new Transacao( data,1, "Adição de Moeda", quantidade);
         transacaoRepository.save(transacao);
         return true;
+    }
+
+    public List<Transacao> listarTransacoes(int usuarioId) {
+        Usuario usuario = usuarioRepository.findById(usuarioId).orElse(null);
+        if (usuario == null) return null;
+        return transacaoRepository.findAll().stream()
+                .filter(transacao -> transacao.getUsuarioId() == usuarioId)
+                .toList();
+
     }
     
 }

@@ -85,3 +85,9 @@ CREATE TABLE Relatorio (
     instituicao_id INT REFERENCES Instituicao(instituicao_id),
     transacao_id INT REFERENCES Transacao(transacao_id)
 );
+
+alter table Transacao
+    add column destinario_id INT REFERENCES Usuario(id),
+    add column remetente_id INT REFERENCES Usuario(id),
+    add column usuario_idINT REFERENCES Usuario(id)
+    

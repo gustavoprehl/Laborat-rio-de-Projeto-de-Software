@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import moedaAcademica.application.usecases.CrudAluno;
 import moedaAcademica.domain.model.Aluno;
+import moedaAcademica.domain.model.Usuario;
 
 import java.util.List;
 
@@ -23,7 +24,17 @@ public class AlunoController {
         this.crudAluno = crudAluno;
     }
     @PostMapping("/adicionar")
-    public String adicionarAluno(@RequestBody Aluno aluno) {
+    public String adicionarAluno(@RequestBody Aluno aluno, @RequestBody Usuario usuario) {
+        boolean usuerSucesso = crudAluno.criarUsuario(
+        usuario.getId(),
+        usuario.getEmail(),
+        usuario.getSenha(),
+        usuario.getTipoUsuario(),            
+        usuario.getSaldo()
+        );
+        if (!usuerSucesso) {
+            return "Erro ao adicionar usuario.";
+        } 
         boolean sucesso = crudAluno.adicionarAluno(
             aluno.getName(),
             aluno.getCpf(),

@@ -6,15 +6,36 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import moedaAcademica.domain.model.Aluno;
+import moedaAcademica.domain.model.Usuario;
 import moedaAcademica.infrastructure.persistence.AlunoRepository;
+import moedaAcademica.infrastructure.persistence.UsuarioRepository;
 
 @Service
 public class CrudAluno {
     @Autowired
     private AlunoRepository alunoRepository;
 
-    public CrudAluno(AlunoRepository alunoRepository) {
+    @Autowired
+    private UsuarioRepository usuarioRepository;
+
+    public CrudAluno(AlunoRepository alunoRepository, UsuarioRepository usuarioRepository) {
         this.alunoRepository = alunoRepository;
+        this.usuarioRepository = usuarioRepository;
+    }
+    public boolean criarUsuario(int id, String email, String senha, String tipoUsuario, int saldo) {
+        if(usuarioRepository.findByEmail(email) !=  null) {    
+            return false;
+        }
+        Usuario usuario = new Usuario();
+        usuario.setEmail(email);
+        usuario.setSenha(senha);
+        usuario.setTipoUsuario(tipoUsuario);
+        usuario.setSaldo(saldo);
+        usuarioRepository.save(usuario);
+        if(usuario.getEmail() == null && usuario.getSenha() == null && usuario.getTipoUsuario() == null) {
+            return false;
+        }  
+        return true;
     }
     public boolean adicionarAluno(String nome, String cpf, String endereco, String curso, int instituicaoId, int usuarioId) {
         Aluno aluno = new Aluno();
