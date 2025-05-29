@@ -2,6 +2,9 @@ package moedaAcademica.api.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+
 import org.springframework.web.bind.annotation.PostMapping;
 
 import moedaAcademica.application.usecases.GerenciarTransações;
@@ -16,7 +19,7 @@ public class MoedaController {
         this.gerenciarTransacoes = gerenciarTransacoes;
     }
 @PostMapping("/transferir")
-public String transferirMoeda(int remetenteId, int destinatarioId, int quantidade) {
+public String transferirMoeda(@RequestBody int remetenteId,@RequestBody int destinatarioId,@RequestBody int quantidade) {
     boolean sucesso = gerenciarTransacoes.transferirMoeda(remetenteId, destinatarioId, quantidade);
     if (sucesso) {
         return "Transferência realizada com sucesso!";
@@ -25,7 +28,7 @@ public String transferirMoeda(int remetenteId, int destinatarioId, int quantidad
     }
 }
 @PostMapping("/adicionar")
-public String adicionarMoeda(int usuarioId, int quantidade) {
+public String adicionarMoeda(@RequestBody int usuarioId, @RequestBody int quantidade) {
     boolean sucesso = gerenciarTransacoes.adicionarMoeda(usuarioId, quantidade);
     if (sucesso) {
         return "Moeda adicionada com sucesso!";
